@@ -1,0 +1,17 @@
+[package]
+name = "tixman"
+version = "0.1.0"
+authors = ["Areg Baghinyan <areg@baghinyan.com>"]
+edition = "2018"
+description = "Tixman is a simple ans secure transaction manager"
+repository = "https://github.com/abaghinyan/tixman"
+
+[[bin]]
+name = "tixman"
+path = "src/bin.rs"
+
+[dependencies]
+csv = "1.1"
+serde = { version = "1", features = ["derive"] }
+quicli = "0.4"
+structopt = { version = "0.3", default-features = false }
